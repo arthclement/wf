@@ -1,5 +1,8 @@
 <?php
 
+namespace Vector;
+
+
 function getVectorAngle($vectorA, $vectorB) {
    
     $pi=pi();
