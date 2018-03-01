@@ -3,7 +3,7 @@
 namespace Format;
 
 function formatToCSV($decodedJSON) {
-    $csvFile = [['title', 'description', 'name', 'createdDate', 'updatedDate']];
+    $csvFile = [['Title', 'Description', 'Name', 'CreatedDate', 'UpdatedDate']];
     foreach ($decodedJSON as $key => $value) {
         $csvFileWIP = [];
 
