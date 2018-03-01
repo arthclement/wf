@@ -8,11 +8,11 @@ function formatToCSV($decodedJSON) {
         $csvFileWIP = [];
 
         $csvFileWIP[] = $key;
-        $preferedVersion = $value['preferred'];
-        $csvFileWIP[] = $value['versions'][$preferedVersion]['info']['description'];
-        $csvFileWIP[] = $value['versions'][$preferedVersion]['info']['contact']['name'];
+        $preferredVersion = $value['preferred'];
+        $csvFileWIP[] = $value['versions'][$preferredVersion]['info']['description'];
+        $csvFileWIP[] = $value['versions'][$preferredVersion]['info']['contact']['name'];
         $csvFileWIP[] = dateFormatter($value['added']);
-        $csvFileWIP[] = dateFormatter($value['versions'][$preferedVersion]['added']);
+        $csvFileWIP[] = dateFormatter($value['versions'][$preferredVersion]['added']);
     
         $csvFile[] = $csvFileWIP;
     }
