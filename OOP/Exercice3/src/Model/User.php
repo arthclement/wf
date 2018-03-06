@@ -1,7 +1,7 @@
 <?php
 namespace Model;
 
-class User
+class User //implements UserInterface
 {
     private $id;
     protected $roles = [];
